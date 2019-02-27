@@ -6,7 +6,10 @@ Dependencies (on the HPC cluster) are:
 - [GNU parallel](https://www.gnu.org/software/parallel/) which in turn only requires a C compiler
 - bash
 
-Moreover, the python package [QML](https://github.com/qmlcode/qml) is required on a workstation, but not necessarily on the compute cluster.
+Moreover, the python package [QML](https://github.com/qmlcode/qml) is required on a workstation, but not necessarily on the compute cluster. Installation instructions can be found [here](http://www.qmlcode.org/installation.html), but the copy-and-paste one-liner is
+```
+pip install --user qml
+```
 
 ## General workflow
 
