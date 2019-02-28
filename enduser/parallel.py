@@ -1,6 +1,8 @@
 #!/usr/bin/bash
-import queue
-import shlex
+try:
+	import queue
+except ImportError:
+	import Queue as queue
 import subprocess
 import sys
 import threading
@@ -44,7 +46,7 @@ for i in range(concurrent):
 walltimes, cmds = [], []
 with open(taskfile) as fh:
 	for line in fh:
-		walltime, cmd = line.strip().split(' ', maxsplit=1)
+		walltime, cmd = line.strip().split(' ', 1)
 		walltimes.append(int(walltime))
 		cmds.append(cmd)
 tasks = sorted(zip(walltimes, cmds), key=lambda _: _[0])
