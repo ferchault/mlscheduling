@@ -26,3 +26,11 @@ A python script then can be used to build a list of estimated timings as follows
 ...
 ```
 On the compute cluster, this file then can be passed on to `parallel.sh` within a job script.
+
+## Setup on the compute cluster
+
+You'll need a directory that allows a special kind of file to be created, the FIFO. You can test whether any directory you have access to allows this kind of special files by running
+```
+mkfifo test && rm test
+```
+Unless you get `mkfifo: cannot create fifo 'test': Operation not permitted`, this directory is suitable for operation.
