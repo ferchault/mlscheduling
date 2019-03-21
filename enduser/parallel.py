@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env python
 try:
 	import queue
 except ImportError:
