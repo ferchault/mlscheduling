@@ -14,16 +14,16 @@ pip install --user qml
 
 At first, a random subset of the planned calculations should be submitted to the HPC cluster as usual. The resulting timings and molecular geometries have to be collected as follows:
 ```
-[XYZ file name without suffix (.xyz)] [WALLTIME in seconds] 
-[XYZ file name without suffix (.xyz)] [WALLTIME in seconds]
+[XYZ file name without suffix (.xyz) and no spaces] [WALLTIME in seconds] 
+[XYZ file name without suffix (.xyz) and no spaces] [WALLTIME in seconds]
 ...
 ```
 
 Next, another text file is neeed that contains a list of XYZ files and the command you would run on the compute cluster to run the corresponding calculation. The file should look like this:
 
 ```
-[XYZ file name without suffix (.xyz)] [command to run]
-[XYZ file name without suffix (.xyz)] [command to run]
+[XYZ file name without suffix (.xyz)]\t[command to run]
+[XYZ file name without suffix (.xyz)]\t[command to run]
 
 ...
 ```
