@@ -36,7 +36,7 @@ def get_coords(filename):
   coords = dict()
 
   for line in lines:
-    tokens = line.split()
+    tokens = line.split('\t')
     coord = tokens[0]
     cmd = tokens[1]
     coords[coord] = cmd
