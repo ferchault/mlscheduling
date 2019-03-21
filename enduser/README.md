@@ -103,7 +103,7 @@ If you run `train-predict.py` as follows
 ```
 python train-predict.py completed-timings.txt remaining-jobs.txt [path to xyz files]
 ```
-you will obtain a new file `tasklist.txt` that contains all commands from `remaining-jobs.txt` with a timing estimate. Copy it back to the compute cluster.
+the timings will be written to the terminal and you can forward them to a new file `tasklist.txt` that contains all commands from `remaining-jobs.txt` with a timing estimate. Copy it back to the compute cluster.
 
 ### Submission
 Now you need to have a new submission script. Before, you had one execution per job script. This single call is called a "job step". Now you need multiple job steps to be run in parallel. Most compute clusters document how to do that. In almost all cases, it is sufficient to ask for an integer multiple of the compute resources and then execute the `submit.job` file multiple times. In this case, create a new job script that (after specifiying the resources) executes the following
