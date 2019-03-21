@@ -22,10 +22,9 @@ At first, a random subset of the planned calculations should be submitted to the
 Next, another text file is neeed that contains a list of XYZ files and the command you would run on the compute cluster to run the corresponding calculation. The file should look like this:
 
 ```
-[path to XYZ file]
-[command to run]
-[path to XYZ file]
-[command to run]
+[XYZ file name without suffix (.xyz)] [command to run]
+[XYZ file name without suffix (.xyz)] [command to run]
+
 ...
 ```
 The python script `train-predict.py` then can be used to build a list of estimated timings as follows. This file is called `taskfile`
@@ -102,7 +101,7 @@ tar xf transfer.tar
 
 If you run `train-predict.py` as follows
 ```
-python train-predict.py completed-timings.txt remaining-jobs.txt
+python train-predict.py completed-timings.txt remaining-jobs.txt [path to xyz files]
 ```
 you will obtain a new file `tasklist.txt` that contains all commands from `remaining-jobs.txt` with a timing estimate. Copy it back to the compute cluster.
 
