@@ -4,8 +4,9 @@ This folder contains an example how to use the machine-learnt timings for effici
 
 On the compute cluster, this code needs either Python2 or Python3 but no further dependencies.
 
-Moreover, the python package [QML](https://github.com/qmlcode/qml) is required on a workstation, but not on the compute cluster. Installation instructions can be found [here](http://www.qmlcode.org/installation.html), but the copy-and-paste one-liner is
+Moreover, the python package [QML](https://github.com/qmlcode/qml) is required on a workstation, but not on the compute cluster. Installation instructions can be found [here](http://www.qmlcode.org/installation.html), but the copy-and-paste two-liner is
 ```
+sudo apt-get install python-pip gfortran libblas-dev liblapack-dev git
 pip install --user qml
 ```
 
