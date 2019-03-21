@@ -171,4 +171,4 @@ if __name__ == "__main__":
   Yss = np.dot(K_pred.T, alpha)
 
   for i in range(len(Yss)):
-    print(Yss[i], mols_pred[i].cmd)
+    print(str(Yss[i]) + '\t' + str(mols_pred[i].cmd))
