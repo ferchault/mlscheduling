@@ -110,4 +110,4 @@ Now you need to have a new submission script. Before, you had one execution per 
 ```
 python parallel.py taskfile.txt 12 43200
 ```
-Here, we assume that we want to run 12 calculations in parallel and that our walltime limit is 12 hours, i.e. 43200 seconds.
+Here, we assume that we want to run 12 calculations in parallel and that our walltime limit is 12 hours, i.e. 43200 seconds. For 1.5k molecules the ML scipt (train-predict.py) takes 16 seconds, 4 minutes for 5k molecules and 13 minutes for 8k molecules.
