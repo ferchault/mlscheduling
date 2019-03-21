@@ -14,8 +14,8 @@ pip install --user qml
 
 At first, a random subset of the planned calculations should be submitted to the HPC cluster as usual. The resulting timings and molecular geometries have to be collected as follows:
 ```
-[WALLTIME in seconds] [path to XYZ file]
-[WALLTIME in seconds] [path to XYZ file]
+[XYZ file name without suffix (.xyz)] [WALLTIME in seconds] 
+[XYZ file name without suffix (.xyz)] [WALLTIME in seconds]
 ...
 ```
 
