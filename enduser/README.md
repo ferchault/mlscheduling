@@ -29,8 +29,8 @@ Next, another text file is neeed that contains a list of XYZ files and the comma
 ```
 The python script `train-predict.py` then can be used to build a list of estimated timings as follows. This file is called `taskfile`
 ```
-[WALLTIME in seconds] [command to run]
-[WALLTIME in seconds] [command to run]
+[WALLTIME in seconds]\t[command to run]
+[WALLTIME in seconds]\t[command to run]
 ...
 ```
 On the compute cluster, this file then can be passed on to `parallel.py` within a job script. The usage is
